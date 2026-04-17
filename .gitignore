@@ -1,0 +1,26 @@
+# Java and Maven
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Database (H2)
+data/
+*.mv.db
+*.trace.db
+
+# Logs
+*.log
+logs/
+
+# IDE and OS
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
