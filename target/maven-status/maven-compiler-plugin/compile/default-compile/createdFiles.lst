@@ -1,0 +1,16 @@
+com\workshop\monitoring\application\usecase\MetricSummary.class
+com\workshop\monitoring\infrastructure\service\OrderServiceImpl.class
+com\workshop\monitoring\infrastructure\web\GlobalExceptionHandler.class
+com\workshop\monitoring\application\usecase\MetricsUseCase.class
+com\workshop\monitoring\infrastructure\web\ServiceController.class
+com\workshop\monitoring\infrastructure\service\InventoryServiceImpl.class
+com\workshop\monitoring\domain\model\LogEntry.class
+com\workshop\monitoring\MonitoringApplication.class
+com\workshop\monitoring\application\usecase\MetricSummary$MetricSummaryBuilder.class
+com\workshop\monitoring\infrastructure\proxy\LoggingProxy.class
+com\workshop\monitoring\infrastructure\config\ProxyConfig.class
+com\workshop\monitoring\domain\repository\LogRepository.class
+com\workshop\monitoring\domain\proxy\MicroserviceProxy.class
+com\workshop\monitoring\application\usecase\LoadSimulationUseCase.class
+com\workshop\monitoring\infrastructure\service\PaymentServiceImpl.class
+com\workshop\monitoring\infrastructure\web\MetricsController.class

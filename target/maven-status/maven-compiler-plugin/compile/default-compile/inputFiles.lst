@@ -1,0 +1,15 @@
+C:\Users\Gabriel\Desktop\Tareas\PatronesSW\ProxyTaller\backend\src\main\java\com\workshop\monitoring\application\usecase\LoadSimulationUseCase.java
+C:\Users\Gabriel\Desktop\Tareas\PatronesSW\ProxyTaller\backend\src\main\java\com\workshop\monitoring\application\usecase\MetricSummary.java
+C:\Users\Gabriel\Desktop\Tareas\PatronesSW\ProxyTaller\backend\src\main\java\com\workshop\monitoring\application\usecase\MetricsUseCase.java
+C:\Users\Gabriel\Desktop\Tareas\PatronesSW\ProxyTaller\backend\src\main\java\com\workshop\monitoring\domain\model\LogEntry.java
+C:\Users\Gabriel\Desktop\Tareas\PatronesSW\ProxyTaller\backend\src\main\java\com\workshop\monitoring\domain\proxy\MicroserviceProxy.java
+C:\Users\Gabriel\Desktop\Tareas\PatronesSW\ProxyTaller\backend\src\main\java\com\workshop\monitoring\domain\repository\LogRepository.java
+C:\Users\Gabriel\Desktop\Tareas\PatronesSW\ProxyTaller\backend\src\main\java\com\workshop\monitoring\infrastructure\config\ProxyConfig.java
+C:\Users\Gabriel\Desktop\Tareas\PatronesSW\ProxyTaller\backend\src\main\java\com\workshop\monitoring\infrastructure\proxy\LoggingProxy.java
+C:\Users\Gabriel\Desktop\Tareas\PatronesSW\ProxyTaller\backend\src\main\java\com\workshop\monitoring\infrastructure\service\InventoryServiceImpl.java
+C:\Users\Gabriel\Desktop\Tareas\PatronesSW\ProxyTaller\backend\src\main\java\com\workshop\monitoring\infrastructure\service\OrderServiceImpl.java
+C:\Users\Gabriel\Desktop\Tareas\PatronesSW\ProxyTaller\backend\src\main\java\com\workshop\monitoring\infrastructure\service\PaymentServiceImpl.java
+C:\Users\Gabriel\Desktop\Tareas\PatronesSW\ProxyTaller\backend\src\main\java\com\workshop\monitoring\infrastructure\web\GlobalExceptionHandler.java
+C:\Users\Gabriel\Desktop\Tareas\PatronesSW\ProxyTaller\backend\src\main\java\com\workshop\monitoring\infrastructure\web\MetricsController.java
+C:\Users\Gabriel\Desktop\Tareas\PatronesSW\ProxyTaller\backend\src\main\java\com\workshop\monitoring\infrastructure\web\ServiceController.java
+C:\Users\Gabriel\Desktop\Tareas\PatronesSW\ProxyTaller\backend\src\main\java\com\workshop\monitoring\MonitoringApplication.java
