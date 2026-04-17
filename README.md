@@ -1,46 +1,39 @@
 # Proxy Boot - Backend
 
-Backend implementation for the microservices monitoring system using the **Proxy Pattern**.
+Backend implementation for the microservices monitoring system.
 
-## Design Pattern: Proxy
-The Proxy Pattern is used here to intercept calls to three core services (`Inventory`, `Orders`, `Payments`). 
+## Design Patterns & Data Structures
+
+### 1. Proxy Pattern
+Used to intercept calls to core services. The `LoggingProxy` captures metadata, performance, and errors without altering business logic.
+
+### 2. Doubly Linked List (Lista Doblemente Enlazada)
+Para cumplir con los requerimientos académicos de estructuras de datos, se implementó una **Lista Doblemente Enlazada** (`DoublyLinkedList<T>`).
+
+- **Uso**: Se utiliza para gestionar el búfer de logs recientes en memoria.
+- **Ventaja**: Permite navegar bidireccionalmente por los eventos capturados por el Proxy de forma eficiente, facilitando la implementación de la paginación y la visualización de "anterior/siguiente" en la auditoría.
 
 ```mermaid
 classDiagram
-    class MicroserviceProxy {
-        <<interface>>
-        +execute(operation, params)
+    class Node {
+        +T data
+        +Node next
+        +Node prev
     }
-    class ConcreteService {
-        +execute(operation, params)
+    class DoublyLinkedList {
+        -Node head
+        -Node tail
+        +addFirst(T)
+        +addLast(T)
+        +get(int)
     }
-    class LoggingProxy {
-        -target: MicroserviceProxy
-        -logRepo: LogRepository
-        +execute(operation, params)
-    }
-    
-    MicroserviceProxy <|.. ConcreteService
-    MicroserviceProxy <|.. LoggingProxy
-    LoggingProxy o-- MicroserviceProxy : wraps
+    DoublyLinkedList --> Node
 ```
 
-- **LoggingProxy**: Acts as a decorator that adds logging and execution time tracking without modifying the business logic of the concrete services.
-- **Fail-Safe Processing**: The proxy ensures that even if a service fails (like the intentional 10% failure in Payments), the meta-data is captured.
-
 ## Technology Stack
-- **Spring Boot 3.4**: Core framework.
-- **Spring Data JPA**: Persistence using H2.
-- **SpringDoc OpenAPI (Swagger)**: API documentation.
-- **H2 File Persistence**: Data is saved in `./data/monitoring`.
+- **Spring Boot 3.4**
+- **Spring Data JPA & H2** (Persistencia en archivo)
+- **SpringDoc OpenAPI (Swagger)**
 
-## Getting Started
-1. Navigate to the `backend` folder.
-2. Run `./mvnw spring-boot:run` or `mvn spring-boot:run`.
-3. Access **Swagger UI** at: `http://localhost:8080/swagger-ui.html`.
-4. API endpoints are under `/api/services` and `/api/metrics`.
-
-## Highlights
-- **Clean Architecture**: Decoupled layers (Domain, Application, Infrastructure).
-- **Atomic Persistence**: Logs are saved in real-time.
-- **Generics**: The `MicroserviceProxy<T>` is designed to handle any return type.
+## Acceso
+- **Swagger UI**: `http://localhost:8080/swagger-ui.html`
